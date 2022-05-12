@@ -92,7 +92,7 @@ li a {
 }
 .formulario {
     padding: 2vw;
-    font-size: 2vw;
+    font-size: 3vw;
 }
 .formulario__boton {
     padding: 1vw;
@@ -122,14 +122,13 @@ li a {
     display: flex;
     flex-direction: column;
 }
-/*.formulario label {
+.formulario label {
     width: auto;
-    padding: 2vw;
     border: 0;
     text-align: center;
     font-size: 3vw;
 }
-.formulario input {
+/*.formulario input {
     width: auto;
     height: 5vw;
     background-color: gainsboro;
@@ -422,10 +421,16 @@ p.footer__tm {
     p.footer__tm {
         font-size: 2.5vw;
     }
+    form {
+        text-align: center;
+    }
 }
 @media screen and (max-width:350px) {
     .catalogo {
         grid-template-columns: 100%;
+    }
+    form {
+        text-align: center;
     }
 }
 /*
