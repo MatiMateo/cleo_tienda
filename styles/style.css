@@ -24,6 +24,12 @@ html {
 .header__hamburguesa {
     display: none;
 }
+ul.dropdown-menu {
+    background-color: black;
+}
+.dropdown-menu button {
+    appearance: none;
+}
 .menu {
     display: flex;
     color: white;
