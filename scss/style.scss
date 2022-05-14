@@ -12,7 +12,7 @@ html {
     font-style: normal;*/
 }
 ::-webkit-scrollbar {
-    width: 2vw;
+    width: 1vw;
     background-color: black;
 }
 ::-webkit-scrollbar-track {
@@ -23,10 +23,14 @@ html {
     background: darkgray;
     border-radius: 50px;
 }
+body {
+    background-color: #f7dcca;
+}
 .grid {
     display: grid;
 }
 @import "partials/_header.scss";
+@import "partials/_extras.scss";
 @import "partials/_formulario.scss";
 @import "partials/_infoproducto.scss";
 @import "partials/_catalogoinicio.scss";

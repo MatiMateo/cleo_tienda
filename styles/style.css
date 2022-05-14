@@ -12,7 +12,7 @@ html {
     font-style: normal;*/ }
 
 ::-webkit-scrollbar {
-  width: 2vw;
+  width: 1vw;
   background-color: black; }
 
 ::-webkit-scrollbar-track {
@@ -22,6 +22,9 @@ html {
 ::-webkit-scrollbar-thumb {
   background: darkgray;
   border-radius: 50px; }
+
+body {
+  background-color: #f7dcca; }
 
 .grid {
   display: grid; }
@@ -102,6 +105,41 @@ li a {
   color: white;
   text-decoration: none; }
 
+.bg-color--black {
+  background-color: black;
+  width: 100%;
+  padding: 1.5vw;
+  margin-top: .15vw; }
+
+.mensaje__bienvenida {
+  color: white;
+  font-size: 2vw;
+  font-weight: 600;
+  text-align: center; }
+
+.slide-right {
+  -webkit-animation: slide-right 4.5s cubic-bezier(0.6, -2, 0.735, 0.045) 4 alternate backwards;
+  animation: slide-right 4.5s cubic-bezier(0.6, -2, 0.735, 0.045) 4 alternate backwards; }
+
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  100% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px); } }
+
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  100% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px); } }
+
+/*@keyframes mensaje_en_loop {
+    0% {}
+}*/
 .formulario {
   padding: 2vw;
   font-size: 2vw;
@@ -297,12 +335,15 @@ footer {
 .footer__logo {
   grid-area: dat;
   display: flex;
-  padding: 1.5vw;
-  align-items: center; }
+  padding: 1.5vw 0 1.5vw 1.5vw;
+  margin-right: 1.5vw;
+  align-items: center;
+  gap: 2vw; }
 
 .footer__logo__datos {
   justify-content: flex-end;
-  padding: 1.5vw;
+  padding: 1.5vw 1.5vw 1.5vw 0;
+  margin-left: 1.5vw;
   align-items: center; }
 
 .footer__logo__datos p {

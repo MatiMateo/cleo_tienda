@@ -12,13 +12,16 @@ footer {
 .footer__logo {
     grid-area: dat;
     display: flex;
-    padding: 1.5vw;
+    padding: 1.5vw 0 1.5vw 1.5vw;
+    margin-right: 1.5vw;
     align-items: center;
+    gap: 2vw;
 
 }
 .footer__logo__datos {
     justify-content: flex-end;
-    padding: 1.5vw;
+    padding: 1.5vw 1.5vw 1.5vw 0;
+    margin-left: 1.5vw;
     align-items: center;
 }
 .footer__logo__datos p {

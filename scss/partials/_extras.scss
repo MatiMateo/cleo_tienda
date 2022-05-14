@@ -1,0 +1,40 @@
+.bg-color--black {
+    background-color: black;
+    width: 100%;
+    padding: 1.5vw;
+    margin-top: .15vw;
+}
+.mensaje__bienvenida {
+    color: white;
+    font-size: 2vw;
+    font-weight: 600;
+    text-align: center;
+}
+.slide-right {
+	-webkit-animation: slide-right 4.5s cubic-bezier(0.600, -2, 0.735, 0.045) 4 alternate backwards;
+	        animation: slide-right 4.5s cubic-bezier(0.600, -2, 0.735, 0.045) 4 alternate backwards;
+}
+@-webkit-keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(100px);
+              transform: translateX(100px);
+    }
+  }
+  @keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(100px);
+              transform: translateX(100px);
+    }
+  }
+  
+/*@keyframes mensaje_en_loop {
+    0% {}
+}*/
