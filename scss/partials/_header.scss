@@ -1,0 +1,76 @@
+.header {
+    background-color: black;
+    grid-template-columns: 30% 70%;
+    padding: 1.5vw;
+    width: 100%;
+    font-size: 1.8vw;
+}
+.header__hamburguesa {
+    display: none;
+}
+.menu {
+    display: flex;
+    color: white;
+    align-items: center;  
+}
+.menu__items {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto 1.5% auto auto;
+    justify-content: space-around;
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+.menu__login {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: flex-end;
+}
+.menu__login a {
+    text-decoration: none;
+    color: white;
+}
+.menu__categorias {
+    display: inline-block;
+}
+.menu__contacto {
+    display: inline-block;
+}
+.menu__categorias ul{
+    list-style: none;
+}
+.menu__contacto ul{
+    list-style: none;
+}
+ul {
+    list-style: none;
+    position: absolute;
+    display: none;
+}
+li {
+    display: inline-block;
+    width: 100%;
+    margin: 0.5em;
+    position: relative;
+    display: block;
+}
+li a {
+    color: white;
+    text-decoration: none;
+}
+.menu__categorias:hover ul {
+    display: block;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+.menu__contacto:hover ul {
+    display: block;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}

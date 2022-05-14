@@ -1,0 +1,90 @@
+.prod__info {
+    display: grid;
+    grid-template-areas: 
+    "img col"
+    "img col"
+    "img tal"
+    "img tal"
+    "img buy"
+    "img buy"
+    "tit tit"
+    "desc desc"
+    "prc prc";
+    grid-template-columns: 50% 50%;
+}
+.prod__img {
+    width: 100%;
+    grid-area: img;
+    padding: 2vw;
+}
+.prod__img img {
+    width: 100%;
+}
+.prod__colores {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 10% 10% 10% 10% 10%;
+    gap: 2%;
+    grid-area: col;
+    padding: 2vw;
+    align-items: center;
+}
+.prod__talles {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 10% 10% 10% 10% 10%;
+    gap: 2%;
+    grid-area: tal;
+    padding: 2vw;
+    align-items: center;
+}
+.prod__talles a {
+    border: 0.1vw solid black;
+    border-radius: 100%;
+    height: 5vw;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.prod--botonComprar {
+    width: 15vw;
+    height: 5vw;
+    border-radius: 25%;
+    border: none;
+    padding: 2vw;
+    grid-area: buy;
+}
+.prod--red {
+    background-color: red;
+    border: 0.1vw solid black;
+    border-radius: 100%;
+    height: 5vw;
+}
+.prod--yellow {
+    background-color: yellow;
+    border: 0.1vw solid black;
+    border-radius: 100%;
+    height: 5vw;
+}
+.prod--blue {
+    background-color: blue;
+    border: 0.1vw solid black;
+    border-radius: 100%;
+    height: 5vw;
+}
+.prod--white {
+    background-color: white;
+    border: 0.1vw solid black;
+    border-radius: 100%;
+    height: 5vw;
+}
+.prod--black {
+    background-color: black;
+    border: 0.1vw solid black;
+    border-radius: 100%;
+    height: 5vw;
+}
+.prod__carrito {
+    grid-area: buy;
+}

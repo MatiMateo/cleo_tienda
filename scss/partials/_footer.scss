@@ -1,0 +1,50 @@
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 2%;
+}
+.footer {
+    display: grid;
+    grid-template-areas: "dat rrss";
+    gap: 10vw;
+}
+.footer__logo {
+    grid-area: dat;
+    display: flex;
+    padding: 1.5vw;
+    align-items: center;
+
+}
+.footer__logo__datos {
+    justify-content: flex-end;
+    padding: 1.5vw;
+    align-items: center;
+}
+.footer__logo__datos p {
+    padding: 0.5vw;
+}
+.footer__redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5vw;
+    grid-area: rrss;
+    color: white;
+    justify-content: center;
+}
+.footer__redes__iconos a {
+    text-decoration: none;
+    color: white;
+    padding: 1.5vw;
+}
+.footer__redes p {
+    justify-self: center;
+}
+.footer__redes__iconos {
+    padding: 2vw;
+}
+p.footer__tm {
+    text-align: center;
+    padding: 1.5vw;
+}

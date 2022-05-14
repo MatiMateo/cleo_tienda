@@ -1,0 +1,23 @@
+{
+  "name": "cleo_tienda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss styles/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatiMateo/cleo_tienda.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatiMateo/cleo_tienda/issues"
+  },
+  "homepage": "https://github.com/MatiMateo/cleo_tienda#readme"
+}
