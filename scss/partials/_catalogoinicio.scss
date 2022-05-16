@@ -1,10 +1,57 @@
 .catalogo {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: repeat(3, 32%);
     padding: 2vh;
     align-items: center;
+    column-gap: 2vw;
+    row-gap: 2vw;
 }
 .catalogo__prod {
+    background-color: white;
+    border-radius: 1.5vw;
+    border-radius: 1.5vh;
+    position: relative;
+}
+.catalogo__prod--img {
+    padding: 2vw;
+    width: 100%;
+    position: relative;
+}
+.catalogo__prod--img img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+.catalogo__prod--+info {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.catalogo__prod--img:hover .catalogo__prod--aparecer {
+    height: 10%;
+}
+.catalogo__prod--aparecer {
+    position: absolute;
+    bottom: 2vw;
+    left: 2vw;
+    right: 0;
+    background-color: white;
+    overflow: hidden;
+    width: 87.3%;
+    height: 0;
+    transition: .5s ease;
+    padding: 0 2vw;
+    text-align: center;
+    justify-content: center;
+}
+/*.catalogo__prod {
     display: grid;
     grid-template-areas: 
     "img img img"
@@ -26,6 +73,7 @@
     grid-area: img;
     width:90%;
     padding: 1.5vw;
+    border-radius: 50px;
 }
 .catalogo__prod img:hover {
     width: 110%;
@@ -53,4 +101,4 @@ p.catalogo__comprar:hover {
 .catalogo__prod a:hover {
     font-size: 2.5vw;
     transition: 0.5s ease;
-}
+}*/
