@@ -26,14 +26,15 @@
     .catalogo {
         grid-template-columns: 50% 50%;
     }
-    p.catalogo__comprar {
-        font-size: 3.5vw;
+    .catalogo__precio,
+    .catalogo__comprar {
+        font-size: 2.5vw;
     }
-    .catalogo__prod a {
-        font-size: 3.5vw;
+    .catalogo__nombre {
+        font-size: 3vw;
     }
-    p.catalogo__precio {
-        font-size: 3.5vw;
+    .catalogo__prod--+info {
+        font-size: 1.5vw;
     }
     .footer {
         display: grid;

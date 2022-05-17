@@ -12,14 +12,19 @@
     <link rel="stylesheet" href="https://use.typekit.net/tno2qem.css">
 </head>
 <body>
-    <header>
-        <nav class="menu">
-            <a href="../index.html" class="header__logo">
-                <img src="./images/SVG/Recurso 3Logo.svg" alt="logotipo cleo tienda">
+    <header class="header grid">
+        <a href="../index.html" class="header__logo">
+            <img src="../images/SVG/Recurso 3Logo.svg" alt="logotipo cleo tienda">
+        </a>
+        <div class="header__hamburguesa">
+            <a href="#">
+                <img src="../images/SVG/Menu barsMenu bars.svg" alt="">
             </a>
-            <div class="menu items">
-                <a href="../index.html" class="menu inicio">Inicio</a><!--Símbolo Flecha-->
-                <div class="menu categorias">
+
+        </div>
+        <nav class="menu">
+            <div class="menu__items">
+                <div class="menu__categorias">
                     <span>Categorías</span>
                     <ul>
                         <li>
@@ -39,7 +44,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="menu contacto">
+                <div class="menu__contacto">
                     <span>Contacto</span>
                     <ul>
                         <li>
@@ -53,26 +58,26 @@
                         </li>
                     </ul>
                 </div>
-                <a href="../pages/carrito.html" class="menu carrito">Carrito</a><!--Símbolo carrito-->
-                <a href="../pages/login.html" class="menu login">Iniciar sesión/Registrarse</a>
-                
+                <a href="./carrito.html" class="menu__carrito">Carrito</a><!--Símbolo carrito-->
+                <a href="./login.html" class="menu__login">Iniciar sesión/Registrarse</a>
+                <a href="./perfil.html" class="menu__perfil">Mi cuenta</a>
             </div>
         </nav>
     </header>
     <footer>
         <div class="footer">
-            <div class="logo">
+            <div class="footer__logo">
                 <img src="../images/SVG/Recurso 3Logo.svg" alt="logotipo cleo tienda">
-                <div class="datos">
+                <div class="footer__logo__datos">
                     <p>Arenales 659</p>
                     <p>Azul, Buenos Aires</p>
                     <p>****-******</p>
                 </div>
             </div>
             <!--<img src="./images/SVG/SVG/Recurso 1Linea.svg" alt="detalle">-->
-            <div class="redes">
-                <p>Redes Sociales y contacto</p>
-                <div class="iconos"><!--iconos-->
+            <div class="footer__redes">
+                <p class="footer--centro">Redes Sociales y contacto</p>
+                <div class="footer__redes__iconos"><!--iconos-->
                     <a href="#">Instagram</a>
                     <a href="#">Facebook</a>
                     <a href="#">Whatsapp</a>
@@ -80,7 +85,7 @@
             </div>
         </div>
 
-        <p class="tm">Rött Skägg Design 2022 - Todos los derechos reservados</p>
+        <p class="footer__tm">Rött Skägg Design 2022 - Todos los derechos reservados</p>
     </footer>
 </body>
 </html>

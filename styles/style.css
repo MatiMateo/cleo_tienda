@@ -71,40 +71,117 @@ body {
 .menu__contacto {
   display: inline-block; }
 
-.menu__categorias ul {
-  list-style: none; }
+.dropspan {
+  color: white;
+  padding: 16px;
+  border: none; }
 
-.menu__contacto ul {
-  list-style: none; }
-
-ul {
-  list-style: none;
-  position: absolute;
-  display: none; }
-
-li {
-  display: inline-block;
-  width: 100%;
-  margin: 0.5em;
+/* The container <div> - needed to position the dropdown content */
+.menu__categorias {
   position: relative;
+  display: inline-block; }
+
+/* Dropdown Content (Hidden by Default) */
+.menu__categorias-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 2vw; }
+
+/* Links inside the dropdown */
+.menu__categorias-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
   display: block; }
 
+/* Change color of dropdown links on hover */
+.menu__categorias-content a:hover {
+  color: black;
+  background-color: #f7dcca; }
+
+.menu__categorias-content a:hover:last-child {
+  border-bottom-left-radius: 2vw;
+  border-bottom-right-radius: 2vw; }
+
+/* Show the dropdown menu on hover */
+.menu__categorias:hover .menu__categorias-content {
+  display: block; }
+
+/* The container <div> - needed to position the dropdown content */
+.menu__contacto {
+  position: relative;
+  display: inline-block; }
+
+/* Dropdown Content (Hidden by Default) */
+.menu__contacto-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 2vw; }
+
+/* Links inside the dropdown */
+.menu__contacto-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block; }
+
+/* Change color of dropdown links on hover */
+.menu__contacto-content a:hover {
+  color: black;
+  background-color: #f7dcca; }
+
+.menu__contacto-content a:hover:last-child {
+  border-bottom-left-radius: 2vw;
+  border-bottom-right-radius: 2vw; }
+
+/* Show the dropdown menu on hover */
+.menu__contacto:hover .menu__contacto-content {
+  display: block; }
+
+/* Change the background color of the dropdown button when the dropdown content is shown 
+  .menu__categorias:hover .dropspan {background-color: #3e8e41;}*/
+/*.menu__categorias ul{
+    list-style: none;
+}
+.menu__contacto ul{
+    list-style: none;
+}
+ul {
+    list-style: none;
+    position: absolute;
+    display: none;
+}
+li {
+    display: inline-block;
+    width: 100%;
+    margin: 0.5em;
+    position: relative;
+    display: block;
+}
 li a {
-  color: white;
-  text-decoration: none; }
-
+    color: white;
+    text-decoration: none;
+}
 .menu__categorias:hover ul {
-  display: block;
-  background-color: black;
-  color: white;
-  text-decoration: none; }
-
+    display: block;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
 .menu__contacto:hover ul {
-  display: block;
-  background-color: black;
-  color: white;
-  text-decoration: none; }
-
+    display: block;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}*/
 .bg-color--black {
   background-color: black;
   width: 100%;
@@ -317,6 +394,25 @@ li a {
   column-gap: 2vw;
   row-gap: 2vw; }
 
+.catalogo--flex {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1vw 2vw;
+  justify-content: space-around; }
+
+.catalogo__precio {
+  font-size: 2vw;
+  font-weight: bold; }
+
+.catalogo__comprar {
+  font-size: 2vw;
+  font-weight: bold; }
+
+.catalogo__nombre {
+  font-size: 2.5vw;
+  padding: 0 2vw 1vw;
+  font-weight: bold; }
+
 .catalogo__prod {
   background-color: white;
   border-radius: 1.5vw;
@@ -324,7 +420,7 @@ li a {
   position: relative; }
 
 .catalogo__prod--img {
-  padding: 2vw;
+  padding: 2vw 2vw 0.5vw;
   width: 100%;
   position: relative; }
 
@@ -335,7 +431,7 @@ li a {
 
 .catalogo__prod-- + info {
   color: white;
-  font-size: 20px;
+  font-size: 1vw;
   font-weight: bold;
   position: absolute;
   top: 50%;
@@ -350,7 +446,7 @@ li a {
 
 .catalogo__prod--aparecer {
   position: absolute;
-  bottom: 2vw;
+  bottom: .5vw;
   left: 2vw;
   right: 0;
   background-color: white;
@@ -486,12 +582,13 @@ p.footer__tm {
     margin: 1em; }
   .catalogo {
     grid-template-columns: 50% 50%; }
-  p.catalogo__comprar {
-    font-size: 3.5vw; }
-  .catalogo__prod a {
-    font-size: 3.5vw; }
-  p.catalogo__precio {
-    font-size: 3.5vw; }
+  .catalogo__precio,
+  .catalogo__comprar {
+    font-size: 2.5vw; }
+  .catalogo__nombre {
+    font-size: 3vw; }
+  .catalogo__prod-- + info {
+    font-size: 1.5vw; }
   .footer {
     display: grid;
     grid-template-areas: "dat" "rrss";
