@@ -24,17 +24,6 @@
         </div>
         <nav class="menu">
             <div class="menu__items">
-                <div class="menu__categorias">
-                    <span class="dropspan">Categorías</span>
-                    <div class="menu__categorias-content">
-                      <a href="#">Categoría 1</a>
-                      <a href="#">Categoría 2</a>
-                      <a href="#">Categoría 3</a>
-                      <a href="#">Categoría 4</a>
-                      <a href="#">Categoría 5</a>
-                    </div>
-                  </div>
-                
                 <div class="menu__contacto">
                     <span class="dropspan">Contacto</span>
                     <div class="menu__contacto-content">
@@ -43,40 +32,102 @@
                       <a href="#">Facebook</a>
                     </div>
                   </div>
-                <a href="./carrito.html" class="menu__carrito">Carrito</a><!--Símbolo carrito-->
-                <a href="./login.html" class="menu__login">Iniciar sesión/Registrarse</a>
-                <a href="./perfil.html" class="menu__perfil">Mi cuenta</a>
+                <a href="carrito.html" class="menu__carrito">Carrito</a><!--Símbolo carrito-->
+                <a href="login.html" class="menu__login">Iniciar sesión/Registrarse</a>
+                <a href="perfil.html" class="menu__perfil">Mi cuenta</a>
             </div>
         </nav>
     </header>
     <main>
         <a href="../index.html">Volver</a>
         <div class="prod__info">
-            <div class="prod__img">
+                <section class="carousel" aria-label="Gallery">
+                    <ol class="carousel__viewport">
+                    <li id="carousel__slide1"
+                        tabindex="0"
+                        class="carousel__slide">
+                        <div class="carousel__snapper">
+                        <a href="#carousel__slide4"
+                            class="carousel__prev">Go to last slide</a>
+                        <a href="#carousel__slide2"
+                            class="carousel__next">Go to next slide</a>
+                        </div>
+                    </li>
+                    <li id="carousel__slide2"
+                        tabindex="0"
+                        class="carousel__slide">
+                        <div class="carousel__snapper"></div>
+                        <a href="#carousel__slide1"
+                        class="carousel__prev">Go to previous slide</a>
+                        <a href="#carousel__slide3"
+                        class="carousel__next">Go to next slide</a>
+                    </li>
+                    <li id="carousel__slide3"
+                        tabindex="0"
+                        class="carousel__slide">
+                        <div class="carousel__snapper"></div>
+                        <a href="#carousel__slide2"
+                        class="carousel__prev">Go to previous slide</a>
+                        <a href="#carousel__slide4"
+                        class="carousel__next">Go to next slide</a>
+                    </li>
+                    <li id="carousel__slide4"
+                        tabindex="0"
+                        class="carousel__slide">
+                        <div class="carousel__snapper"></div>
+                        <a href="#carousel__slide3"
+                        class="carousel__prev">Go to previous slide</a>
+                        <a href="#carousel__slide1"
+                        class="carousel__next">Go to first slide</a>
+                    </li>
+                    </ol>
+                    <aside class="carousel__navigation">
+                    <ol class="carousel__navigation-list">
+                        <li class="carousel__navigation-item">
+                        <a href="#carousel__slide1"
+                            class="carousel__navigation-button">Go to slide 1</a>
+                        </li>
+                        <li class="carousel__navigation-item">
+                        <a href="#carousel__slide2"
+                            class="carousel__navigation-button">Go to slide 2</a>
+                        </li>
+                        <li class="carousel__navigation-item">
+                        <a href="#carousel__slide3"
+                            class="carousel__navigation-button">Go to slide 3</a>
+                        </li>
+                        <li class="carousel__navigation-item">
+                        <a href="#carousel__slide4"
+                            class="carousel__navigation-button">Go to slide 4</a>
+                        </li>
+                    </ol>
+                    </aside>
+                </section>
+            <!--<div class="prod__img">
                 <img src="../images/prod 7.jpeg" alt="producto 1">
-            </div>
-            <h2 class="prod__nombre">Remera Iluminación</h2>
-            <p class="prod__detalle">Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Qui exercitationem eveniet</p>
-            <p class="prod__precio">$ ------</p>
-            <div class="prod__colores">
-                <a href="#" class="prod--red"></a>
-                <a href="#" class="prod--yellow"></a>
-                <a href="#" class="prod--blue"></a>
-                <a href="#" class="prod--white"></a>
-                <a href="#" class="prod--black"></a>
-            </div>
-            <div class="prod__talles">
-                <a href="#">XS</a>
-                <a href="#">S</a>
-                <a href="#">M</a>
-                <a href="#">L</a>
-                <a href="#">XL</a>
-            </div>
-            <div class="prod__carrito">
-                <button class="prod--botonComprar">Comprar</button>
-            </div>
-
+            </div>-->
+            <section class="prod__detalles">
+                <h2 class="prod__nombre">Remera Iluminación</h2>
+                <p class="prod__detalle">Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Qui exercitationem eveniet</p>
+                <p class="prod__precio">$ ------</p>
+                <div class="prod__colores">
+                    <a href="#" class="prod--red"></a>
+                    <a href="#" class="prod--yellow"></a>
+                    <a href="#" class="prod--blue"></a>
+                    <a href="#" class="prod--white"></a>
+                    <a href="#" class="prod--black"></a>
+                </div>
+                <div class="prod__talles">
+                    <a href="#">XS</a>
+                    <a href="#">S</a>
+                    <a href="#">M</a>
+                    <a href="#">L</a>
+                    <a href="#">XL</a>
+                </div>
+                <div class="prod__carrito">
+                    <button class="prod--botonComprar">Comprar</button>
+                </div>
+            </section>
         </div>
     </main>
     <footer>

@@ -1,7 +1,7 @@
 .header {
     background-color: black;
     grid-template-columns: 30% 70%;
-    padding: 1.5vw;
+    padding: 2vw;
     width: 100%;
     font-size: 1.8vw;
 }
@@ -23,6 +23,7 @@
 .menu a {
     text-decoration: none;
     color: white;
+    padding: 1.5vw;
 }
 .menu__login {
     display: flex;
@@ -42,7 +43,7 @@
 }
 .dropspan {
     color: white;
-    padding: 16px;
+    padding: 1.5vw;
     border: none;
   }
   
