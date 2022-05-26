@@ -29,6 +29,7 @@ body {
 .grid {
     display: grid;
 }
+@import "partials/index";
 @import "partials/_header.scss";
 @import "partials/_extras.scss";
 @import "partials/_formulario.scss";
