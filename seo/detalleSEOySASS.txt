@@ -1,0 +1,6 @@
+Agregadas las etiquetas meta a todos los archivos html:
+<meta name="description" content="Tienda minorista de ropa de mujer online, de Azul para todo el país">
+<meta name="keywords" content="CLEO, TIENDA, ROPA, MUJER, JEANS, TOP, STORE, ROPA DE NOCHE, AZUL, ARGENTINA, MODA, ENVIOS">
+
+@extend agregados en archivos scss
+    

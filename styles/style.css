@@ -73,7 +73,7 @@ button {
   justify-items: center;
   padding-bottom: 2vw; }
 
-.tarjetas__envios {
+.tarjetas__envios, .tarjetas__paymethod {
   background-color: #fff0f0;
   width: 25vw;
   height: 8vw;
@@ -82,12 +82,7 @@ button {
   font-size: 2vw; }
 
 .tarjetas__paymethod {
-  background-color: #fff0f0;
-  width: 25vw;
-  height: 8vw;
-  padding: 1.9vw 0;
-  text-align: center;
-  font-size: 2vw; }
+  padding: 1.9vw 0; }
 
 .banner__contenedor--btn a {
   text-decoration: none;
@@ -108,7 +103,7 @@ button {
 .header__hamburguesa {
   display: none; }
 
-.menu {
+.menu, .menu__login {
   display: flex;
   color: white;
   align-items: center; }
@@ -120,15 +115,12 @@ button {
   margin: auto 1.5% auto auto;
   justify-content: space-around; }
 
-.menu a {
+.menu a, .menu__login a {
   text-decoration: none;
   color: white;
   padding: 1.5vw; }
 
 .menu__login {
-  display: flex;
-  color: white;
-  align-items: center;
   justify-content: flex-end; }
 
 .menu__login a {
@@ -340,25 +332,13 @@ li a {
   width: 50%;
   text-align: center; }
 
-.formulario__nombre {
-  padding: 2vw;
-  display: flex;
-  flex-direction: column; }
-
-.formulario__email {
-  padding: 2vw;
-  display: flex;
-  flex-direction: column; }
-
-.formulario__pass {
+.formulario__nombre, .formulario__email, .formulario__pass, .formulario__passConfirm {
   padding: 2vw;
   display: flex;
   flex-direction: column; }
 
 .formulario__passConfirm {
-  padding: 1vw;
-  display: flex;
-  flex-direction: column; }
+  padding: 1vw; }
 
 .formulario label {
   width: auto;
@@ -837,7 +817,7 @@ p.footer__tm {
   padding: 1.5vw; }
 
 @media screen and (max-width: 650px) {
-  .menu {
+  .menu, .menu__login {
     display: none; }
   .grid {
     display: grid;

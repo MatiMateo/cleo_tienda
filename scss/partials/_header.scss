@@ -26,9 +26,7 @@
     padding: 1.5vw;
 }
 .menu__login {
-    display: flex;
-    color: white;
-    align-items: center;
+    @extend .menu;
     justify-content: flex-end;
 }
 .menu__login a {

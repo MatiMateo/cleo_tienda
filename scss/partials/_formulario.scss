@@ -21,19 +21,14 @@
     flex-direction: column;
 }
 .formulario__email {
-    padding: 2vw;
-    display: flex;
-    flex-direction: column;
+    @extend .formulario__nombre;
 }
 .formulario__pass {
-    padding: 2vw;
-    display: flex;
-    flex-direction: column;
+    @extend .formulario__nombre;
 }
 .formulario__passConfirm {
+    @extend .formulario__nombre;
     padding: 1vw;
-    display: flex;
-    flex-direction: column;
 }
 .formulario label {
     width: auto;

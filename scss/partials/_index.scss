@@ -52,12 +52,8 @@
       font-size: 2vw;
   }
   .tarjetas__paymethod {
-    background-color: rgb(255, 240, 240);
-    width: 25vw;
-    height: 8vw;
+    @extend .tarjetas__envios;
     padding: 1.9vw 0;
-    text-align: center;
-    font-size: 2vw;
 }
 .banner__contenedor--btn a {
     text-decoration: none;
