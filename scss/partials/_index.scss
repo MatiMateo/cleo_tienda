@@ -8,10 +8,10 @@
 .banner__contenedor--izq {
     text-align: center;
     background-color: rgb(255, 240, 240);
-    height: 75%;
+    height: 72%;
 }
 .banner__contenedor--der {
-    height: 75%;
+    height: 72%;
 }
 .banner__contenedor--der img{
     width: 100%;
@@ -19,7 +19,7 @@
   }
   @supports(object-fit: cover){
       .banner__contenedor--der img{
-        height: 75%;
+        height: 100%;
         object-fit: cover;
         object-position: center center;
       }
@@ -63,4 +63,5 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
+    padding-bottom: 2vw;
 }

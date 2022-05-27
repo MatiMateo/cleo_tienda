@@ -39,10 +39,10 @@ body {
 .banner__contenedor--izq {
   text-align: center;
   background-color: #fff0f0;
-  height: 75%; }
+  height: 72%; }
 
 .banner__contenedor--der {
-  height: 75%; }
+  height: 72%; }
 
 .banner__contenedor--der img {
   width: 100%;
@@ -50,7 +50,7 @@ body {
 
 @supports (object-fit: cover) {
   .banner__contenedor--der img {
-    height: 75%;
+    height: 100%;
     object-fit: cover;
     object-position: center center; } }
 
@@ -91,7 +91,8 @@ button {
 .tarjetas__nuevos-ingresos--grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px; }
+  gap: 10px;
+  padding-bottom: 2vw; }
 
 .header {
   background-color: black;
