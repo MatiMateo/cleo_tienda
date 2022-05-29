@@ -11,6 +11,9 @@ html {
 
     font-style: normal;*/
 }
+ion-icon {
+    pointer-events: none;
+}
 ::-webkit-scrollbar {
     width: 1vw;
     background-color: black;

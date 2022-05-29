@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/MatiMateo/cleo_tienda/issues"
   },
-  "homepage": "https://github.com/MatiMateo/cleo_tienda#readme"
+  "homepage": "https://github.com/MatiMateo/cleo_tienda#readme",
+  "dependencies": {
+    "@flaticon/flaticon-uicons": "^1.7.0"
+  }
 }
