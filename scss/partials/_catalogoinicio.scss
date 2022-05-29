@@ -6,6 +6,12 @@
     column-gap: 2vw;
     row-gap: 2vw;
 }
+.tarjetas__catalogo--grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 0 2vw 2vw;
+}
 .catalogo__tarjeta {
     padding: 0 1vw 2vw;
 }
@@ -84,6 +90,9 @@ a {
 }
 .catalogo__prod--aparecer-carrito:hover {
     background-color: rgb(255, 240, 240);
+}
+.banner {
+    padding: 2vw 0;
 }
 /*.catalogo__prod {
     display: grid;

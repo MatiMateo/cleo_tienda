@@ -67,4 +67,19 @@
 }
 .tarjetas__filtros--grid {
     @extend .tarjetas__nuevos-ingresos--grid;
+    text-align: center;
+}
+.destacados {
+    padding: 0 0 2vw;
+}
+.destacados--h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3vw;
+}
+.colecciones {
+    padding: 0 0 2vw;
+}
+.colecciones--h1 {
+    @extend .destacados--h1;
 }

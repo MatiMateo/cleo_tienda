@@ -97,6 +97,20 @@ button {
   gap: 10px;
   padding: 0 2vw 2vw; }
 
+.tarjetas__filtros--grid {
+  text-align: center; }
+
+.destacados {
+  padding: 0 0 2vw; }
+
+.destacados--h1, .colecciones--h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3vw; }
+
+.colecciones {
+  padding: 0 0 2vw; }
+
 .header {
   background-color: black;
   grid-template-columns: 30% 70%;
@@ -649,6 +663,12 @@ ol, li {
   column-gap: 2vw;
   row-gap: 2vw; }
 
+.tarjetas__catalogo--grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  padding: 0 2vw 2vw; }
+
 .catalogo__tarjeta {
   padding: 0 1vw 2vw; }
 
@@ -723,6 +743,9 @@ a {
 
 .catalogo__prod--aparecer-carrito:hover, .catalogo__prod--aparecer-info:hover {
   background-color: #fff0f0; }
+
+.banner {
+  padding: 2vw 0; }
 
 /*.catalogo__prod {
     display: grid;
