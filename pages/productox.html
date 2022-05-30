@@ -41,93 +41,56 @@
         </nav>
     </header>
     <main>
-        <a href="../index.html">Volver</a>
-        <div class="prod__info">
-                <section class="carousel" aria-label="Gallery">
-                    <ol class="carousel__viewport">
-                    <li id="carousel__slide1"
-                        tabindex="0"
-                        class="carousel__slide">
-                        <div class="carousel__snapper">
-                        <a href="#carousel__slide4"
-                            class="carousel__prev">Go to last slide</a>
-                        <a href="#carousel__slide2"
-                            class="carousel__next">Go to next slide</a>
-                        </div>
-                    </li>
-                    <li id="carousel__slide2"
-                        tabindex="0"
-                        class="carousel__slide">
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel__slide1"
-                        class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel__slide3"
-                        class="carousel__next">Go to next slide</a>
-                    </li>
-                    <li id="carousel__slide3"
-                        tabindex="0"
-                        class="carousel__slide">
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel__slide2"
-                        class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel__slide4"
-                        class="carousel__next">Go to next slide</a>
-                    </li>
-                    <li id="carousel__slide4"
-                        tabindex="0"
-                        class="carousel__slide">
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel__slide3"
-                        class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel__slide1"
-                        class="carousel__next">Go to first slide</a>
-                    </li>
-                    </ol>
-                    <aside class="carousel__navigation">
-                    <ol class="carousel__navigation-list">
-                        <li class="carousel__navigation-item">
-                        <a href="#carousel__slide1"
-                            class="carousel__navigation-button">Go to slide 1</a>
-                        </li>
-                        <li class="carousel__navigation-item">
-                        <a href="#carousel__slide2"
-                            class="carousel__navigation-button">Go to slide 2</a>
-                        </li>
-                        <li class="carousel__navigation-item">
-                        <a href="#carousel__slide3"
-                            class="carousel__navigation-button">Go to slide 3</a>
-                        </li>
-                        <li class="carousel__navigation-item">
-                        <a href="#carousel__slide4"
-                            class="carousel__navigation-button">Go to slide 4</a>
-                        </li>
-                    </ol>
-                    </aside>
-                </section>
-            <!--<div class="prod__img">
-                <img src="../images/prod 7.jpeg" alt="producto 1">
-            </div>-->
+        <div class="contenedor--grid">
+            <section class="prod__img--grid">
+                <div class="prod__img--laterales">
+                    <img src="../images/prod 7.jpeg" alt="producto 1">
+                    <img src="../images/prod 7.jpeg" alt="producto 1">
+                    <img src="../images/prod 7.jpeg" alt="producto 1">
+                </div>
+                <div class="prod__img--principal">
+                    <img src="../images/prod 7.jpeg" alt="producto 1">
+                </div>
+            </section>
             <section class="prod__detalles">
                 <h2 class="prod__nombre">Remera Iluminación</h2>
-                <p class="prod__detalle">Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Qui exercitationem eveniet</p>
-                <p class="prod__precio">$ ------</p>
-                <div class="prod__colores">
-                    <a href="#" class="prod--red"></a>
-                    <a href="#" class="prod--yellow"></a>
-                    <a href="#" class="prod--blue"></a>
-                    <a href="#" class="prod--white"></a>
-                    <a href="#" class="prod--black"></a>
+                <p class="prod__detalle">100% Algodón</p>
+                <p class="prod__precio">$ 1000</p>
+                <div class="prod__colores--grid">
+                    <span class="btncolor prod--red" data-tooltip="Rojo">
+                        <button class="prod__colores--btn"></button>
+                    </span>
+                    <span class="btncolor prod--yellow" data-tooltip="Amarillo">
+                        <button class="prod__colores--btn"></button>
+                    </span>
+                    <span class="btncolor prod--blue" data-tooltip="Azul">
+                        <button class="prod__colores--btn"></button>
+                    </span>
+                    <span class="btncolor prod--white" data-tooltip="Blanco">
+                        <button class="prod__colores--btn"></button>
+                    </span>
+                    <span class="btncolor prod--black" data-tooltip="Negro">
+                        <button class="prod__colores--btn"></button>
+                    </span>
                 </div>
-                <div class="prod__talles">
-                    <a href="#">XS</a>
-                    <a href="#">S</a>
-                    <a href="#">M</a>
-                    <a href="#">L</a>
-                    <a href="#">XL</a>
+                <div class="prod__talles--grid">
+                    <button class="prod__talles--btn">XS</button>
+                    <button class="prod__talles--btn">S</button>
+                    <button class="prod__talles--btn">M</button>
+                    <button class="prod__talles--btn">L</button>
+                    <button class="prod__talles--btn">XL</button>
                 </div>
-                <div class="prod__carrito">
-                    <button class="prod--botonComprar">Comprar</button>
+                <div class="cantidad-btncompra--grid">
+                    <div class="prod__cantidad--grid">
+                        <button class="prod--botonCantidad-minus">-</button>
+                        <div class="prod--etiquetaCantidad">
+                            <label for="cantidad">0</label>
+                        </div>
+                        <button class="prod--botonCantidad-plus">+</button>
+                    </div>
+                    <div class="prod__comprar">
+                        <button class="prod--botonComprar">Añadir al carrito</button>
+                    </div>
                 </div>
             </section>
         </div>
