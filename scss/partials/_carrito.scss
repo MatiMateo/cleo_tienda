@@ -1,0 +1,104 @@
+.contenedor__productos--grid {
+    display: grid;
+    padding: 2vw 2vw;
+    grid-template-rows: 1fr 2fr;
+    height: 20vw;
+}
+.contenedor__productos--grid span {
+    font-size: 2vw;
+}
+.titulos-contenedor__productos {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.contenido-contenedor__productos--grid {
+    @extend .titulos-contenedor__productos;
+}
+.producto--mini {
+    display: flex;
+    align-items: center;
+}
+.producto--mini img {
+    width: 100%;
+}
+.producto--mini-enlace {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 100%;
+}
+.detalle-producto--mini {
+    display: flex;
+    align-items: center;
+    padding-left: 2vw;
+    height: 1fr;
+}
+.enCarrito {
+    width: 100%;
+}
+.contenedor__envios-pagos--grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4vw;
+    padding: 2vw;
+}
+.contenedor__envios--grid {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    width: 100%;
+    height: 20vw;
+    border: 1px solid black;
+}
+.contenedor__envios-pagos--grid span {
+    font-size: 2vw;
+}
+.nombre-contenedor__envios {
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding-left: 2vw;
+    font-size: 2vw;
+}
+.info__envios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2vw;
+}
+.local {
+    margin-bottom: 2vw;
+}
+.envios {
+    @extend .local;
+}
+.icono__envios {
+    font-size: 2vw;
+}
+.contenedor__pagos--grid {
+    @extend .contenedor__envios--grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+.nombre-contenedor__pagos {
+    @extend .nombre-contenedor__envios;
+    justify-content: center;
+    padding-left: 0;
+}
+.monto-total {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+}
+.contenedor__pagos--flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid black;
+}
+.btnpagar {
+    display: flex;
+    align-items: center;
+    height: 4vw;
+    font-size: 2vw;
+}

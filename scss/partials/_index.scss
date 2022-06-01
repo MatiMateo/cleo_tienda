@@ -47,13 +47,15 @@
       background-color: rgb(255, 240, 240);
       width: 25vw;
       height: 8vw;
-      padding: 3vw 0;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-size: 2vw;
   }
   .tarjetas__paymethod {
     @extend .tarjetas__envios;
-    padding: 1.9vw 0;
+    flex-wrap: wrap;
+    text-align: center;
 }
 .banner__contenedor--btn a {
     text-decoration: none;

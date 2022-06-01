@@ -26,6 +26,7 @@
         </div>
         <nav class="menu">
             <div class="menu__items">
+                <a href="tienda.html">Tienda</a>
                 <div class="menu__contacto">
                     <span class="dropspan">Contacto</span>
                     <div class="menu__contacto-content">
@@ -34,12 +35,63 @@
                       <a href="#">Facebook</a>
                     </div>
                   </div>
-                <a href="carrito.html" class="menu__carrito">Carrito</a><!--Símbolo carrito-->
                 <a href="login.html" class="menu__login">Iniciar sesión/Registrarse</a>
-                <a href="perfil.html" class="menu__perfil">Mi cuenta</a>
             </div>
         </nav>
     </header>
+    <main>
+        <section class="contenedor__productos--grid">
+            <div class="titulos-contenedor__productos">
+                <span>Detalle</span>
+                <span>Precio</span>
+                <span>Cantidad</span>
+                <span>Subtotal</span>
+            </div>
+            <div class="contenido-contenedor__productos--grid">
+                <div class="producto--mini">
+                    <div class="producto--mini-enlace">
+                        <a href="productox.html">
+                            <img src="../images/prod 7.jpeg" alt="remera negra">
+                        </a>
+                        <a href="productox.html" class="detalle-producto--mini">Remera Iluminación</a>
+                    </div>
+                </div>
+                <div class="precio-unitario">
+                    <span class="prod__precio">$1000</span>
+                </div>
+                <div class="prod__cantidad--grid enCarrito">
+                    <button class="prod--botonCantidad-minus">-</button>
+                    <div class="prod--etiquetaCantidad">
+                        <label for="cantidad">1</label>
+                    </div>
+                    <button class="prod--botonCantidad-plus">+</button>
+                </div>
+                <div class="monto-subtotal">
+                    <span class="prod__precio">$1000</span>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor__envios-pagos--grid"> 
+            <div class="contenedor__envios--grid">
+                <div class="nombre-contenedor__envios">
+                    <h2 class="nombre-contenedor">Costo estimado de envío</h2>
+                </div>
+                <div class="info__envios">
+                    <span class="local">Retiro en local: Gratis</span>
+                    <span class="envios">Por envíos coordinamos <a href="https://whatsapp.com"><ion-icon class="icono__envios" name="logo-whatsapp"></ion-icon></a></span>
+                </div>
+            </div>
+            <div class="contenedor__pagos--grid">
+                <div class="nombre-contenedor__pagos">
+                    <h2 class="nombre-contenedor">Total</h2>
+                </div>
+                <div class="monto-total">$1000</div>
+                <div class="contenedor__pagos--flex">
+                    <button class="btnpagar">Pagar</button>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer>
         <div class="footer">
             <div class="footer__logo">

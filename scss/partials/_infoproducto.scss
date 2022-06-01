@@ -55,11 +55,12 @@
     width: 100%;
     border-top: 1.5px solid black;
     border-bottom: 1.5px solid black;
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 3.5vw;
+    font-weight: bold;
+    font-size: 1.5vw;
 }
 .prod__colores--btn {
     width: 3.5vw;
@@ -67,6 +68,11 @@
 }
 .prod__talles--btn {
     @extend .prod__colores--btn;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
 }
 .btncolor {
     position: relative;
@@ -132,6 +138,12 @@
 }
 .prod--black {
     background-color: black;
+}
+.prod--botonComprar {
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /*.prod__info {
     display: grid;
