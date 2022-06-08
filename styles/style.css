@@ -128,6 +128,9 @@ button {
   color: white;
   align-items: center; }
 
+.menu__cerrar {
+  display: none; }
+
 .menu__items {
   display: flex;
   align-items: center;
@@ -152,6 +155,9 @@ button {
 
 .menu__contacto {
   display: inline-block; }
+
+.menu__contacto--media {
+  display: none; }
 
 .dropspan {
   color: white;
@@ -879,14 +885,98 @@ p.footer__tm {
 .footer__iconos--font-size {
   font-size: 4vw; }
 
-@media screen and (max-width: 650px) {
-  .menu, .menu__login {
+@media screen and (max-width: 1023px) {
+  .catalogo__prod--aparecer-carrito, .catalogo__prod--aparecer-info, .catalogo__prod--aparecer-info {
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    background-color: rgba(255, 240, 240, 0.9);
+    overflow: hidden;
+    width: 6vw;
+    height: 6vw;
+    transition: .5s ease;
+    padding: 0 1.5vw;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px; }
+  .catalogo__prod--aparecer-info {
+    top: 8vw; }
+  .catalogo__prod--info, .catalogo__prod--alcarrito, .catalogo__prod--alcarrito {
+    font-size: 5vw;
+    color: rgba(230, 53, 53, 0.8); } }
+
+@media screen and (max-width: 645px) {
+  #lateral {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    transition: right 1s; }
+  #lateral:target {
+    right: 0; }
+  .menu__items {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 0;
+    width: 100%;
+    top: 33vw;
+    font-size: 3vw; }
+  .menu__cerrar {
+    display: block;
+    color: white;
+    font-size: 8vw;
+    font-weight: bold;
+    padding: 1vw; }
+  .menu__contacto {
     display: none; }
+  .menu__contacto--media {
+    display: flex;
+    padding: 2vw; }
+  .menu__iconos--font-size {
+    font-size: 3.5vw; }
   .grid {
     display: grid;
     grid-template-columns: 70% 30%; }
-  .menu__login {
-    display: none; }
+  .tarjetas__info--grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 2vw; }
+  .tarjetas__envios, .tarjetas__paymethod {
+    width: 80%;
+    font-size: 3vw;
+    font-weight: bold; }
+  .tarjetas__paymethod {
+    width: 80%;
+    font-size: 3vw;
+    font-weight: bold; }
+  .colecciones--h1, .destacados--h1, .colecciones--h1 {
+    font-size: 4vw;
+    font-weight: bold; }
+  .catalogo__prod--aparecer-carrito, .catalogo__prod--aparecer-info, .catalogo__prod--aparecer-info {
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    background-color: rgba(255, 240, 240, 0.9);
+    overflow: hidden;
+    width: 15vw;
+    height: 15vw;
+    transition: .5s ease;
+    padding: 0 1.5vw;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px; }
+  .catalogo__prod--aparecer-info {
+    top: 17vw; }
+  .catalogo__prod--info, .catalogo__prod--alcarrito, .catalogo__prod--alcarrito {
+    font-size: 7vw;
+    color: rgba(230, 53, 53, 0.8); }
   .formulario label {
     font-size: 5vw; }
   .header__hamburguesa {
@@ -902,11 +992,44 @@ p.footer__tm {
     grid-template-columns: 50% 50%; }
   .catalogo__precio,
   .catalogo__comprar {
-    font-size: 2.5vw; }
+    font-size: 3.5vw; }
   .catalogo__nombre {
-    font-size: 3vw; }
+    font-size: 4vw; }
   .catalogo__prod-- + info {
     font-size: 1.5vw; }
+  .titulos-contenedor__productos, .contenido-contenedor__productos--grid {
+    font-size: 3vw;
+    font-weight: bold; }
+  .titulos-contenedor__productos span, .contenido-contenedor__productos--grid span {
+    font-size: 3vw;
+    font-weight: bold; }
+  .producto--mini img {
+    padding: 1vw; }
+  .enCarrito {
+    width: 90%; }
+  .prod--etiquetaCantidad {
+    font-size: 2vw;
+    font-weight: bold; }
+  .prod--botonCantidad-minus, .prod--botonCantidad-plus {
+    font-size: 3vw;
+    font-weight: bold; }
+  .contenedor__envios-pagos--grid h2 {
+    font-size: 4vw;
+    font-weight: bold; }
+  .contenedor__envios-pagos--grid span {
+    font-size: 3vw;
+    font-weight: bold; }
+  .contenedor__envios--grid, .contenedor__pagos--grid, .contenedor__pagos--grid {
+    height: 30vw; }
+  .monto-total {
+    font-size: 4vw;
+    font-weight: bold; }
+  .btnpagar {
+    height: 6vw;
+    width: 12vw;
+    justify-content: center;
+    font-size: 3vw;
+    font-weight: bold; }
   .footer {
     display: grid;
     grid-template-areas: "dat" "rrss";

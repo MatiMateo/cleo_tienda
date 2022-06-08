@@ -13,6 +13,9 @@
     color: white;
     align-items: center;  
 }
+.menu__cerrar {
+  display: none;
+}
 .menu__items {
     display: flex;
     align-items: center;
@@ -38,6 +41,9 @@
 }
 .menu__contacto {
     display: inline-block;
+}
+.menu__contacto--media {
+  display: none;
 }
 .dropspan {
     color: white;
