@@ -92,10 +92,10 @@
         position: absolute;
         top: 1vw;
         right: 1vw;
-        background-color: rgba(255, 240, 240, .9);
+        background-color: rgba(255, 240, 240, .8);
         overflow: hidden;
-        width: 15vw;
-        height: 15vw;
+        width: 8vw;
+        height: 8vw;
         transition: .5s ease;
         padding: 0 1.5vw;
         text-align: center;
@@ -103,7 +103,7 @@
         border-radius: 5px;
     }
     .catalogo__prod--aparecer-info {
-        top: 17vw;
+        top: 10vw;
     }
     .catalogo__prod--info, .catalogo__prod--alcarrito {
         font-size: 7vw;
@@ -180,6 +180,76 @@
         justify-content: center;
         font-size: 3vw;
         font-weight: bold;
+    }
+    .contenedor--grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 2fr;
+        height: max-content;
+    }
+    .prod__img--grid {
+        grid-template-columns: 1fr;
+        height: 100vw;
+        align-items: center;
+        background-color: rgba(255, 240, 240, .8);
+    }
+    .prod__img--principal {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 2vw;
+    }
+    .prod__nombre {
+        font-weight: bold;
+        margin-bottom: 3vw;
+    }
+    .prod__img--principal img {
+        width: 90%;
+    }
+    .prod__img--laterales {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        padding: 2vw;
+        gap: 1.5vw;
+        height: fit-content;
+        margin: 0;
+    }
+    .prod__img--laterales img {
+        padding: 0;
+    }
+    .prod__colores--btn {
+        width: 8vw;
+        height: 8vw;
+    }
+    .prod__talles--btn {
+        font-size: 3.5vw;
+    }
+    .cantidad-btncompra--grid {
+        grid-template-columns: 1fr;
+    }
+    .prod__cantidad--grid {
+        width: 40vw;
+        grid-template-columns: 20% 50% 20%;
+        margin-bottom: 3vw;
+        padding: 0;
+    }
+    .prod__comprar {
+        display: flex;
+        width: 40vw;
+        height: 8vw;
+    }
+    .prod--etiquetaCantidad {
+        font-size: 4vw;
+        font-weight: bold;
+        height: 8vw;
+    }
+    .prod--botonComprar {
+        height: 8vw;
+        width: 90%;
+        font-size: 3.5vw;
+
     }
     .footer {
         display: grid;
